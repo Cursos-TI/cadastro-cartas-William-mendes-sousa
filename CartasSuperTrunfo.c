@@ -29,7 +29,7 @@ int main() {
     
     double pib2, pibpercap2;
 
-     long double SuperPoder2;
+    long double SuperPoder2;
 
     // Área para entrada de dados
 
@@ -57,22 +57,11 @@ int main() {
      printf("DIGITE A QUANTIDADE DE PONTOS TURISTCOS: ");
      scanf("%d", &pontosturisticos1);
 
-   // mutiplicando o valor do pib pra chegar no valor em bilhões
 
-     pib1 = pib1 * 1000000000.0;
+     printf("\n");              // PULAR UMA LINHA PRA ORGANIZAÇÃO DA IMPRESSÃO
 
-    //Calculando Densidade Populacional e PIB per Capita da Carta 1
-    
-    densidade1 = população1 / area1;
-    pibpercap1 = (double) pib1 / população1;
    
-    //Calculando a soma do super poder 
-    SuperPoder1 = (long double) população1 + area1 + pib1 + 
-    pontosturisticos1 + densidade1 + pibpercap1;
-
-    printf("\n");                                        // PULAR UMA LINHA PRA ORGANIZAÇÃO DA IMPRESSÃO
-
-   // SISTEMA DE CADASTRO DA CARTA 2
+      // SISTEMA DE CADASTRO DA CARTA 2
     
     printf("   SISTEMA DE CADASTRO DE CARTAS ( CARTA 2 ) \n\n");       //TITULO DO SISTEMA DE CADASTRO
     
@@ -99,20 +88,30 @@ int main() {
     printf("DIGITE A QUANTIDADE DE PONTOS TURISTCOS: ");
     scanf("%d", &pontosturisticos2);
 
-  // mutiplicando o valor do pib pra chegar no valor em bilhões
+  // mutiplicando o valor do pib pra chegar no valor em bilhões das cartas 1 e 2
         
-       pib2 = pib2 * 1000000000.0;
+    pib1 = pib1 * 1000000000.0;  
+    pib2 = pib2 * 1000000000.0;
+       
 
-  //Calculando Densidade Populacional e PIB per Capita da Carta 2 
+  //Calculando Densidade Populacional e PIB per Capita das Carta 1 e 2  
     
-        densidade2 = população2 / area2;
+    densidade1 = população1 / area1;
+    pibpercap1 = (double) pib1 / população1;
+
+    densidade2 = população2 / area2;
     pibpercap2 = (double) pib2 / população2;
     
   //Calculando a soma do super poder 
+    
+    SuperPoder1 = (long double) população1 + area1 + pib1 + 
+    pontosturisticos1 + densidade1 + pibpercap1;
+  
     SuperPoder2 = (long double) população2 + area2 + pib2 + 
     pontosturisticos2 + densidade2 + pibpercap2;
+
     
-    printf("\n"); // PULAR UMA LINHA PRA ORGANIZAÇÃO DA IMPRESSÃO
+   printf("\n"); // PULAR UMA LINHA PRA ORGANIZAÇÃO DA IMPRESSÃO
 
 
   // Área para exibição dos dados da cidade
