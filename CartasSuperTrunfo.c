@@ -141,7 +141,7 @@ int main() {
     printf(" PIB per Capita: %.2lf Reais \n", pibpercap2);
     printf(" Super Poder: %.Lf \n\n", SuperPoder2);
    
-  //Declaração de variaveis dos resultados das comparações das cartas
+  //Declaração de variaveis para resultados das comparações das cartas
     
     int Resultado1, Resultado2,
     Resultado3, Resultado4, Resultado5, Resultado6,
@@ -157,7 +157,8 @@ int main() {
     Resultado5 = densidade1 < densidade2;
     Resultado6 = pibpercap1 > pibpercap2;
     Resultado7 = SuperPoder1 > SuperPoder2;
-
+  
+  //Impressão dos Resultados das comparações das Cartas
     printf("População: Carta 1 Venceu (%d) \n", Resultado1);
     printf("Area: Carta 1 Venceu (%.d) \n", Resultado2);
     printf("Pib: Carta 1 Venceu (%d) \n", Resultado3);
