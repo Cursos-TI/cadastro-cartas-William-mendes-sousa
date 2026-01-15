@@ -11,7 +11,9 @@ int main() {
     
     char estado1[20], cidade1[20], codigo1[10];
     
-    int população1, pontosturisticos1;
+    unsigned long int população1; 
+    
+    int pontosturisticos1;
     
     float area1, densidade1;
     
@@ -23,7 +25,9 @@ int main() {
 
     char  estado2[20], cidade2[20], codigo2[10];
     
-    int  população2, pontosturisticos2;
+    unsigned long int população2;
+    
+    int pontosturisticos2;
     
     float area2, densidade2;
     
@@ -46,7 +50,7 @@ int main() {
      fgets(cidade1, 20, stdin);
     
      printf("DIGITE O NUMERO DE HABITANTES: ");
-     scanf(" %d", &população1);
+     scanf(" %ld", &população1);
     
      printf("DIGITE A AREA DA CIDADE EM QUILOMETROS QUADRADOS: ");
      scanf("%f", &area1);
@@ -77,7 +81,7 @@ int main() {
     fgets(cidade2, 20, stdin);
     
     printf("DIGITE O NUMERO DE HABITANTES: ");
-    scanf(" %d", &população2);
+    scanf(" %ld", &população2);
     
     printf("DIGITE A AREA DA CIDADE EM QUILOMETROS QUADRADOS: ");
     scanf("%f", &area2);
@@ -120,7 +124,7 @@ int main() {
     printf(" Estado: %s ", estado1);
     printf("Codigo: %s \n", codigo1);
     printf(" Cidade: %s", cidade1);
-    printf(" População: %d \n", população1);
+    printf(" População: %ld \n", população1);
     printf(" Area: %.2f km² \n", area1);            
     printf(" PIB: %.2f bilhões de reais \n", pib1 / 1000000000.0);      //divisão pra abeviar o valor na impressão
     printf(" Numero de pontos turisticos: %d \n", pontosturisticos1);
@@ -132,7 +136,7 @@ int main() {
     printf(" Estado: %s ", estado2);
     printf("Codigo: %s \n", codigo2);
     printf(" Cidade: %s", cidade2);
-    printf(" População: %d \n", população2);
+    printf(" População: %ld \n", população2);
     printf(" Area: %.2f km² \n", area2);            
     printf(" PIB: %.2f bilhões de reais \n", pib2 / 1000000000.0);      //divisão pra abeviar o valor na impressão
     printf(" Numero de pontos turisticos: %d \n", pontosturisticos2);
